@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<juego id="2">
+    <nombre> Valorant</nombre>
+    <fecha_estreno>02/06/2020</fecha_estreno>
+    <nota>80 </nota>
+
+    <compania id="1" nif="3312">
+
+        <nombre> Riot Games</nombre>
+        <fecha_constitucion>01/09/2006</fecha_constitucion>
+        <direccion>Pasaje Pau 3 BLOQUE 2 P. 08940, Cornella De Llobregat</direccion>
+        <pais>España</pais>
+        <ciudad>Barcelona</ciudad>
+    </compania>
+
+
+    <programadores>
+        <programador id="4">
+            <nombre>Alejandro</nombre>
+            <apellidos> Grajales Gallego</apellidos>
+            <dni> 794315474Y</dni>
+            <fecha_nacimiento> 06/08/2003</fecha_nacimiento>
+            
+            <direccion> 
+            <tipo_via>calle</tipo_via>
+            <nombre_via>Tiziano</nombre_via>  
+            <codigo_postal> 45223</codigo_postal>  
+            <pais>España</pais>
+            </direccion>
+                        
+        </programador>
+
+
+        <programador id="5">
+            <nombre>manuel</nombre>
+            <apellidos> lopez perez</apellidos>
+            <dni> 79119864Y</dni>
+            <fecha_nacimiento> 01/03/2000</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>puño en rostro</nombre_via>  
+                <codigo_postal> 45223</codigo_postal>  
+                <pais>España</pais>
+                </direccion>
+        </programador>
+
+        <programador id="3">
+            <nombre>alvaro </nombre>
+            <apellidos> pacheco lopez</apellidos>
+            <dni> 44159662Y</dni>
+            <fecha_nacimiento> 01/03/2000</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>van gogh</nombre_via>  
+                <codigo_postal> 45223</codigo_postal>  
+                <pais>España</pais>
+                </direccion>
+        </programador>
+    </programadores>
+    <pagina_web>
+        <html>
+            <![CDATA[
+                <h1 text-align:center>Bienvenido al Videojuego</h1>
+                <h2 style="color: red; text-align: center;">Nombre del Videojuego</h2>
+                <img src="https://i.blogs.es/3f15c2/valorant/1366_2000.jpg" alt="Imagen del Videojuego">
+            ]]>
+        </html>
+    </pagina_web>
+</juego>
