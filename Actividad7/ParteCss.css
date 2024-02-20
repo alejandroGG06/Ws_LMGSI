@@ -1,0 +1,32 @@
+h1{
+   background-color: black;
+   color: yellow; 
+   text-align: center;
+}
+h3{
+color: white;
+background-color: blue; 
+text-align: center;   
+}
+#Legend{
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.blanco{
+    color: white;
+}
+.fondo{
+background-color:#f0f0f0;    
+ }
+ .Azul{
+    color: blue;
+ }
+ .rojo{
+    background-color: red;
+ }
+ 
+p.Clase{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color:blueviolet;
+}
