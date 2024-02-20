@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="Actividad13-1.xsd">
+  <nombre>Biblioteca Don Pancho</nombre>
+  <seccion>
+    <libro>
+      <titulo>viaje al centro de la tierra</titulo>
+      <autor>julio verne</autor>
+      <resumen></resumen>
+      <editorial>
+        <codigo>Rj45</codigo>
+        <nombre>Editorial misgu</nombre>
+        <ciudad>alemania</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>juego de tronos</titulo>
+      <autor>jk rowling</autor>
+      <anio>1999</anio>
+      <resumen>un trono en guerra</resumen>
+      <editorial>
+        <nombre>Carlos carton </nombre>
+        <ciudad>Caracas</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>Cien años de soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <anio>1967</anio>
+      <resumen>La historia de la familia Buendía en Macondo.</resumen>
+      <editorial>
+        <codigo>R4432-19u</codigo>
+        <nombre>Ediciones Macondo</nombre>
+        <ciudad>Bogotá</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>el coco</titulo>
+      <autor>Marco antonio solis</autor>
+      <resumen>un cuento para asustar a los niños </resumen>
+      <editorial>
+		<codigo>TEN3312</codigo>
+        <nombre>Editorial Perdicion Lectora</nombre>
+        <ciudad>Mongolía</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>caminos separados</titulo>
+      <autor>Desconocido</autor>
+      <anio>2005</anio>
+      <resumen>va de una calle que se separa en 2 caminos</resumen>
+      <editorial>
+        <nombre>Newtoon</nombre>
+        <ciudad>New jerset</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <!-- Puedes agregar más secciones y libros según sea necesario -->
+</biblioteca>

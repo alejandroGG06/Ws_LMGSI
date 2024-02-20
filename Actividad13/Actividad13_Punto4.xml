@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="Actividad13_Punto4.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<empresa>
+
+    <nombre>riot</nombre>
+        <nif>13423A</nif>
+        <española>true</española>
+        <capital-social>
+            <tipo>euros</tipo>
+            <cantidad>48560.54</cantidad>
+        </capital-social>
+        <direccion>
+            <tipo-via>Avenida</tipo-via>
+            <nombre-via>Paseo de la Castellana</nombre-via>
+            <cp>28046</cp>
+            <pais>España</pais>
+        </direccion>
+
+    <empleados>
+
+    <empleado>
+        <nombre>alejandro</nombre>
+        <apellidos>garcia</apellidos>
+        <apellidos>marulanda</apellidos>
+        <dni>987643343B</dni>
+        <extranjero>false</extranjero>
+        <fecha-nacimiento>1990-05-15</fecha-nacimiento>
+        <salario>50000.0</salario>
+        <direccion>
+            <direccionString>Calle Alcalá 45, Madrid</direccionString>
+            <pais>España</pais>
+        </direccion>
+        <casado>true</casado>
+    </empleado>
+
+    <empleado>
+        <nombre>Maria</nombre>
+        <apellidos>Ruiz</apellidos>
+        <apellidos>Lopez</apellidos>
+        <dni>87654321C</dni>
+        <extranjero>true</extranjero>
+        <fecha-nacimiento>1985-03-20</fecha-nacimiento>
+        <salario>60000.0</salario>
+        <direccion>
+            <pais>España</pais>
+            <direccionString>Avenida Diagonal 123, Barcelona</direccionString>
+        </direccion>
+        <casado>false</casado>
+        </empleado>
+    </empleados>
+</empresa>

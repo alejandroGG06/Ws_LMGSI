@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="nif" type="xs:string"/>
+        <xs:element name="española" type="xs:boolean"/>
+        <xs:element name="capital-social" type="capital-social"/>
+        <xs:element name="direccion" type="direccionEmpresa"/>
+        <xs:element name="empleados" type="empleados"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="tipo-moneda">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="euros"/>
+      <xs:enumeration value="dolares"/>
+      <xs:enumeration value="yenes"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="capital-social">
+    <xs:sequence>
+      <xs:element name="tipo" type="tipo-moneda"/>
+      <xs:element name="cantidad" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="direccionEmpresa">
+    <xs:sequence>
+      <xs:element name="tipo-via" type="xs:string" minOccurs="1"/>
+      <xs:element name="nombre-via" type="xs:string" minOccurs="1"/>
+      <xs:element name="cp" type="xs:string" minOccurs="1"/>
+      <xs:element name="pais" type="xs:string" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="empleados">
+    <xs:sequence>
+      <xs:element name="empleado" type="empleado" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="empleado">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string" maxOccurs="1"/>
+      <xs:element name="apellidos" type="xs:string" minOccurs="2" maxOccurs="unbounded"/>
+      <xs:element name="dni" type="xs:string"/>
+      <xs:element name="extranjero" type="xs:boolean"/>
+      <xs:element name="fecha-nacimiento" type="xs:string"/>
+      <xs:element name="salario" type="xs:double"/>
+      <xs:element name="direccion" type="direccionEmpleado"/>
+      <xs:element name="casado" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="direccionEmpleado">
+    <xs:all>
+      <xs:element name="direccionString" type="xs:string"/>
+      <xs:element name="pais" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="paises">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="españa"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
