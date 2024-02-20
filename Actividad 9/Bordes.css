@@ -1,0 +1,3 @@
+.tnr{ border: blue 3px solid;}
+h1{border-top: blue 3px solid; border-left: blue solid; border-left: blue 3px solid; border-right: blue 3px solid;border-bottom: blue 3px solid;}
+#especial{border: red 5px solid; border-left:red dashed; border-top:red dotted; border-bottom: red double;}
