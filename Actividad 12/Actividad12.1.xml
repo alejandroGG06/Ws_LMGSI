@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE juego SYSTEM "Actividad12.1.dtd">
+<juego id="F2">
+
+
+
+    <nombre> call of duty modern warfare 2</nombre>
+    <fecha_estreno>28/10/2022</fecha_estreno>
+    <nota>7</nota>
+    <compania id="F1" nif="3312">
+
+        <nombre_compania> Activision</nombre_compania>
+        <fecha_constitucion>01/09/1981</fecha_constitucion>
+        <direccion>
+        <tipo_via>street</tipo_via>
+        <nombre_via>santa monica</nombre_via>
+        <codigo_postal>90408 </codigo_postal>
+        <pais>Estados Unidos</pais>
+        
+    </direccion>
+    </compania>
+
+    <programadores>
+        <programador id="F4">
+            <nombre_programador>manuel</nombre_programador>
+            <apellidos> lorenzo peres</apellidos>
+            <dni> 7943132714Y</dni>
+            <fecha_nacimiento> 05/01/1999</fecha_nacimiento>
+            
+            <direccion> 
+            <tipo_via>calle</tipo_via>
+            <nombre_via>leroy</nombre_via>  
+            <codigo_postal> 90408</codigo_postal>  
+            <pais>Estados Unidos</pais>
+            
+            </direccion>
+                        
+        </programador>
+
+
+        <programador id="F5">
+            <nombre_programador>walter</nombre_programador>
+            <apellidos> white</apellidos>
+            <dni> 79163244Y</dni>
+            <fecha_nacimiento> 01/03/1985</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>lombart</nombre_via>  
+                <codigo_postal>90408 </codigo_postal>  
+                <pais>Estados Unidos</pais>
+                
+            </direccion>
+        </programador>
+
+        <programador id="F3">
+            <nombre_programador>marcus </nombre_programador>
+            <apellidos> rashford pacheco</apellidos>
+            <dni> 448761662Y</dni>
+            <fecha_nacimiento> 02/05/1998</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>maiden lane</nombre_via>  
+                <codigo_postal> 90408</codigo_postal>  
+                <pais>Estados Unidos</pais>
+            </direccion>
+        </programador>
+    </programadores>
+ 
+</juego>

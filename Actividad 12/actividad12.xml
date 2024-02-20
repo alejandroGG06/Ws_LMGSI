@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE juego [ 
+    <!ELEMENT juego (nombre,fecha_estreno,nota, compania,programadores)>
+    <!ATTLIST juego id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fecha_estreno (#PCDATA)>
+    <!ELEMENT nota (#PCDATA)>       
+
+    <!ELEMENT compania (nombre_compania,fecha_constitucion,direccion)>
+    <!ATTLIST compania id ID #REQUIRED>
+    <!ATTLIST compania nif CDATA #REQUIRED>
+    <!ELEMENT nombre_compania (#PCDATA)>
+    <!ELEMENT fecha_constitucion (#PCDATA)>
+
+    
+    <!ELEMENT programadores (programador*)>
+
+    <!ELEMENT programador (nombre_programador,apellidos,dni,fecha_nacimiento,direccion)>
+    <!ATTLIST programador id ID #REQUIRED>
+    <!ELEMENT nombre_programador (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT fecha_nacimiento (#PCDATA)>
+
+    <!ELEMENT direccion (tipo_via,nombre_via,codigo_postal,pais)>
+    <!ELEMENT tipo_via (#PCDATA)>
+    <!ELEMENT nombre_via (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+    
+<!ELEMENT pais (#PCDATA)>
+    
+
+
+
+
+    
+]>
+
+<juego id="F2">
+
+
+
+    <nombre> Valorant</nombre>
+    <fecha_estreno>02/06/2020</fecha_estreno>
+    <nota>80 </nota>
+    <compania id="F1" nif="3312">
+
+        <nombre_compania> Riot Games</nombre_compania>
+        <fecha_constitucion>01/09/2006</fecha_constitucion>
+        <direccion>
+        <tipo_via>Pasaje Pau</tipo_via>
+        <nombre_via>Cornella De Llobregat</nombre_via>
+        <codigo_postal>08009 </codigo_postal>
+        <pais>España</pais>
+        
+    </direccion>
+    </compania>
+
+    <programadores>
+        <programador id="F4">
+            <nombre_programador>Alejandro</nombre_programador>
+            <apellidos> Grajales Gallego</apellidos>
+            <dni> 794315474Y</dni>
+            <fecha_nacimiento> 06/08/2003</fecha_nacimiento>
+            
+            <direccion> 
+            <tipo_via>calle</tipo_via>
+            <nombre_via>Tiziano</nombre_via>  
+            <codigo_postal> 45223</codigo_postal>  
+            <pais>España</pais>
+            
+            </direccion>
+                        
+        </programador>
+
+
+        <programador id="F5">
+            <nombre_programador>manuel</nombre_programador>
+            <apellidos> lopez perez</apellidos>
+            <dni> 79119864Y</dni>
+            <fecha_nacimiento> 01/03/2000</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>puño en rostro</nombre_via>  
+                <codigo_postal> 45223</codigo_postal>  
+                <pais>España</pais>
+                
+            </direccion>
+        </programador>
+
+        <programador id="F3">
+            <nombre_programador>alvaro </nombre_programador>
+            <apellidos> pacheco lopez</apellidos>
+            <dni> 44159662Y</dni>
+            <fecha_nacimiento> 01/03/2000</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>calle</tipo_via>
+                <nombre_via>van gogh</nombre_via>  
+                <codigo_postal> 45223</codigo_postal>  
+                <pais>España</pais>
+            </direccion>
+        </programador>
+    </programadores>
+ 
+</juego>
+
+    
+
+    
+   
+   
