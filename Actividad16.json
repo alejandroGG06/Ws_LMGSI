@@ -1,0 +1,58 @@
+{
+"juego":{
+"id":"2",
+"nombre":"Valorant",
+"fecha_estreno":"02/06/2020",
+"nota":"8",
+"compañia":{
+    "id":"1",
+    "nif":"33112",
+    "programadores":{
+        "programador":[
+        {"id":"4",
+        "nombre":"alejo",
+        "apellido":"Grajales Gallejo",
+        "dni":" 794315474Y",
+        "fecha_nacimiento":"06/08/2003",
+        
+        "direccion":{
+        "tipo_via":"calle",
+        "nombre_via":"Tiziano",
+        "codigo_postal":"45223",
+        "Pais":"España"}
+    },
+    {   "id":"5",
+        "nombre":"manuel",
+        "apellido":"¡lopez perez",
+        "dni":" 79119864Y",
+        "fecha_nacimiento":"01/03/2000",
+        
+        "direccion":{
+        "tipo_via":"calle",
+        "nombre_via":"puño en rostro",
+        "codigo_postal":"45223",
+        "Pais":"España"}
+        },
+        {
+        "id":"6",
+        "nombre":"alvaro",
+        "apellido":"pacheco",
+        "dni":"44159662Y",
+        "fecha_nacimiento":"01/03/2000",
+        
+        "direccion":{
+        "tipo_via":"calle",
+        "nombre_via":"puño van",
+        "codigo_postal":"45223",
+        "Pais":"España"}
+        }
+    
+    ]
+    
+    
+    }    
+    }
+    }
+    
+}
+
