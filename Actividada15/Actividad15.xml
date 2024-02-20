@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="Actividad15.xsd"  schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<ciudades>
+    <ciudad ID="AF12344">
+        <Nombre_ciudad>Madrid</Nombre_ciudad>
+        <Poblacion>15000</Poblacion>
+    </ciudad>
+    <alcalde edad="20">
+        <nombre_alcalde>Alejandro</nombre_alcalde>
+        <apellidos>Grajales Gallego</apellidos>
+        <telefono>+34669985225</telefono>
+        <correo>grajalesalejandro60@gmail.com</correo>
+    </alcalde>
+    <funcionarios id="123465879">
+        <nombre_funcionario>alfredo</nombre_funcionario>
+        <apellido_funcionario>Restrepo</apellido_funcionario>
+        <codigo_postal>12345</codigo_postal>
+        <fecha_nacimiento>02/03/2004</fecha_nacimiento>
+        <contraseña>AA56%$@!ER</contraseña>
+        <cuenta_bancaria>ES 0404 9878 9876</cuenta_bancaria>
+    </funcionarios>
+
+    
+</ciudades>
