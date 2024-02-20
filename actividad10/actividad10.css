@@ -1,0 +1,25 @@
+#absolute{ background-color: aqua;position: absolute;}
+
+ #Fixed {position: fixed; background-color: blueviolet;left: 450px;bottom: 900px;}
+
+#relative{background-color: azure;position: relative;top:20px; 
+left: 300px; outline: 1px solid red;
+width: 120px;}
+
+#static{background-color: beige;position: static; 
+width:150px;height: 100px;
+/* Esto no funcionaria ya que el static no es afectado por esta funcion bottom: 130px;*/}
+#caja{background-color: aquamarine; width: 300px;height: 300px;}
+
+h1{text-align: center; color: rgb(150, 240, 120);}
+
+.Display{display: inline;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.display{display: block;}
+
+a{display: inline;font-size: 30px;}
+/* No cambia en nada, ya que la etiqueta a es en linea y esto no modifica nada en este tipo de etiquetas*/
+
+
+p{display: none;}
+
