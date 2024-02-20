@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="Actividad14.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<empresa nif="123456789" fecha="12/20/2022" pais="españa">
+
+    <nombre> riot</nombre>
+
+    
+    <tipo_moneda>euros</tipo_moneda>
+
+    <capital-social>5000</capital-social>
+    <cp>45223</cp>
+    <ciudad>seseña</ciudad>
+    <direccion>calle</direccion>
+   
+    <empleados >
+        <empleado dni="82256987">
+        <nombre>alejandro</nombre>
+        <apellidos>garcia</apellidos>
+        <apellidos>marulanda</apellidos>
+        <dni>987643343B</dni>
+        <extranjero>false</extranjero>
+        <fecha-nacimiento>1990-05-15</fecha-nacimiento>
+        <salario>50000.0</salario>
+        <direccion>
+            <direccionString>Calle Alcalá 45, Madrid</direccionString>
+            <pais>España</pais>
+        </direccion>
+        <casado>true</casado>
+    </empleado>
+    </empleados>
+
+
+</empresa>

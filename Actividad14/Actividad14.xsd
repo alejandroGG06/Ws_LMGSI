@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="3"></xs:minLength>
+              <xs:maxLength value="15"></xs:maxLength>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        
+
+        <xs:element name="tipo_moneda">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="euros" />
+              <xs:enumeration value="dolares" />
+              <xs:enumeration value="yenes" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+
+        <xs:element name="capital-social">
+          <xs:simpleType>
+            <xs:restriction base="xs:double">
+              <xs:minExclusive value="3000"></xs:minExclusive>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="cp" type="xs:string"></xs:element>
+        <xs:element name="ciudad" type="xs:string"> </xs:element>
+        <xs:element name="direccion">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="calle" />
+              <xs:enumeration value="plaza" />
+              <xs:enumeration value="via" />
+              <xs:enumeration value="camino" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+      </xs:sequence>
+      <xs:attribute name="nif" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minExclusive value="9"></xs:minExclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="fecha" use="optional"></xs:attribute>
+      <xs:attribute name="pais" default="españa" ></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="empleados">
+    <xs:sequence>
+      <xs:element name="empleado" type="empleado" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="empleado">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string" maxOccurs="1"/>
+      <xs:element name="apellidos" type="xs:string" minOccurs="2" maxOccurs="unbounded"/>
+      
+      <xs:element name="extranjero" type="xs:boolean"/>
+      <xs:element name="fecha-nacimiento" type="xs:string"/>
+      <xs:element name="salario" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:double">
+            <xs:minInclusive value="900"/>
+            <xs:maxInclusive value="5000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="direccion" type="direccionEmpleado"/>
+      <xs:element name="casado" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="fechaCreacion" type="xs:string" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="direccionEmpleado">
+    <xs:all>
+      <xs:element name="direccionString"  minOccurs="1" maxOccurs="1"><xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:maxLength value="250"></xs:maxLength>
+        </xs:restriction>
+      </xs:simpleType></xs:element>
+      <xs:element name="pais" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:all>
+    <xs:attribute name="nie" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="8"></xs:minLength>
+          <xs:maxLength value="8"></xs:maxLength>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:simpleType name="paises">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="españa"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  
+
+  
+    
+  
+  
+    
+  
+
+  
+    
+  
+  
+       
+    
+   
+   
+      
+    
+    
+     
+    
+    
+
+  
+  
+ 
+ 
+
+  
+    
+
+        
+
+
+      
+  
+
+
+</xs:schema>
+    
