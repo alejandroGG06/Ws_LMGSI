@@ -1,0 +1,19 @@
+body{background-image: url("https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/tech.batanga.com/files/Fondos-para-paginas-web.jpg");
+    
+    background-size:cover;
+    }
+    
+    #articulo1{width: 60% ;}
+    #articulo2{
+        
+        color:#B03A2E;
+        width: 500px ;
+    }
+    .header1{
+        font-size: 10px;
+
+    }
+    #seccion{
+        color:#16A085;
+    }
+    .header2{font-size: 2em;}
