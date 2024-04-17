@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentencias,bucles y condicionales </title>
+</head>
+<script>
+function pares(){
+  let num1=parseInt(document.getElementById("n1").value);
+  let num2=parseInt(document.getElementById("n2").value);
+    let total=0
+  for (let i = num1; i <=num2; i++) {
+    if (i% 2==0) {
+        total++;
+    }
+    
+  }
+  document.getElementById("tot").value= total ;
+}
+
+function convertirTemperatura() {
+      const temperatura = parseFloat(document.getElementById('temp').value);
+      const conversion = document.getElementById('conversion').value;
+      let resultado;
+      if (conversion === 'celsiusToFahrenheit') {
+        resultado = (temperatura * 9/5) + 32;
+        document.getElementById('resultadoTemperatura').value = `${temperatura}°C es ${resultado}°F`;
+      } else {
+        resultado = (temperatura - 32) * 5/9;
+        document.getElementById('resultadoTemperatura').value = `${temperatura}°F es ${resultado}°C`;
+      }
+    }
+
+    function adivinarNumero() {
+      const numero = parseInt(document.getElementById('adivinar').value);
+      const numeroAleatorio = Math.floor(Math.random() * 50) ;
+      const pista = document.getElementById('pista');
+
+      if (numero == numeroAleatorio) {
+        pista.value = `¡Correcto! El número era ${numeroAleatorio}.`;
+      } else if (numero < numeroAleatorio) {
+        pista.value = 'Muy bajo.';
+      } else {
+        pista.value = 'Muy alto.';
+      }
+    }
+</script>
+<body>
+
+
+    <h1>Contador de numero pares</h1>
+    <input type= "text" id="n1">
+    <input type="text" id="n2">
+    
+    <button onclick="pares()">contar numeros pares</button>
+    <input type="text" id="tot">
+
+
+    <h2>Temperatura</h2>
+    <input type="number" id="temp">
+  </div>
+  <select id="conversion">
+    <option value="celsiusToFahrenheit">Celsius a Fahrenheit</option>
+    <option value="fahrenheitToCelsius">Fahrenheit a Celsius</option>
+  </select>
+  <button onclick="convertirTemperatura()">Convertir</button>
+  <input id="resultadoTemperatura"></input>
+
+
+
+  <h2>Adivina el numero </h2>
+  <input type="number" id="adivinar">
+<button onclick="adivinarNumero()">Adivinar</button>
+<input type="text" id="pista"></input>
+  
+</body>
+
+</html>
