@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentencias,bucles y condicionales </title>
 </head>
+
+
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: bisque;
+   }
+   button{ 
+   border-color: red;
+   color: red;
+   cursor: pointer;
+   border-radius: 10px;
+
+   }
+</style>
 <script>
 function pares(){
   let num1=parseInt(document.getElementById("n1").value);
@@ -45,6 +61,51 @@ function convertirTemperatura() {
         pista.value = 'Muy alto.';
       }
     }
+
+    function cambiocolor(){
+      const colores=document.getElementById("color").value;
+      document.body.style.backgroundColor= colores;
+
+    }
+
+    function Usuarioverificado(){
+      const nombre=document.getElementById("usu").value;
+      const contra=document.getElementById("cont").value;
+      
+      
+      if (nombre==="goku" && contra==="Vegeta777") {
+      alert("bienvenido");
+    }else{ alert("incorrecto"); }
+  }
+  function verificarPrimo() {
+      const numero = parseInt(document.getElementById('primo').value);
+      let esPrimo = true;
+      if (numero <= 1) {
+        esPrimo = false;
+      } else {
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+          if (numero % i === 0) {
+            esPrimo = false;
+            break;
+          }
+        }
+      }
+      const resultadoPrimo = document.getElementById('result');
+      if (esPrimo) {
+        resultadoPrimo.value = `${numero} es  primo.`;
+      } else {
+        resultadoPrimo.value = `${numero} no es  primo.`;
+      }
+    }
+    function generarFibonacci() {
+      const n = parseInt(document.getElementById('fibo').value);
+      let fibonacci = [0, 1];
+      for (let i = 2; i < n; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+      }
+      document.getElementById('resul').value = fibonacci;
+    }
+
 </script>
 <body>
 
@@ -73,7 +134,27 @@ function convertirTemperatura() {
   <input type="number" id="adivinar">
 <button onclick="adivinarNumero()">Adivinar</button>
 <input type="text" id="pista"></input>
-  
+
+<h2>Cambiar el color de pantalla</h2>
+  <input type="text" id="color">
+  <button onclick="cambiocolor()">cambio de color</button>
+
+<h2>Usuario</h2>
+<input type="text" id="usu">
+<input type="password" id="cont">
+<button onclick="Usuarioverificado()">verificado</button>
+
+<h2>Contador primos</h2>
+<input type="text" id="primo">
+<button onclick=" verificarPrimo()">resultado</button>
+<input type="text" id="result">
+
+<h2>Fibonacci</h2>
+<input type="text" id="fibo">
+<button onclick="generarFibonacci()">pulsa para ver</button>
+<input type="text" id="resul">
 </body>
+
+
 
 </html>
